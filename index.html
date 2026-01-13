@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guess Betting</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <section class="main-section">
+        <div class="main-wrapper">
+            <h1>Number Guess Betting</h1>
+            <div class="floating-box">
+                <span class="coins-display">Coins: 100</span>
+
+                <div class="input-fields">
+                    <input type="number" class="bet-amount-input" placeholder="Input bet amount">
+                    <input type="number" class="guess-number-input" placeholder="Guess number 1 - 10">
+                </div>
+
+                <button type="button" class="play-btn">Play</button>
+
+                <span class="random-number-display">
+                    Random number is 
+                    <span class="random-number-result">
+                        0
+                    </span>
+                </span>
+
+                <span class="won-lost-coins">
+                    You won
+                    <span class="coins-result">
+                        +0
+                    </span>
+                    coins
+                </span>
+            </div>
+        </div>
+    </section>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
