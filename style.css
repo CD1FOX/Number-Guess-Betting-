@@ -5,5 +5,71 @@
 
 body {
     background-color: rgb(25, 24, 24);
+    color: white;
+}
+
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h1, .coins-display {
     color: rgb(12, 192, 223);
+    font-weight: bolder;
+}
+
+.floating-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: black;
+    padding: 40px;
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.2);
+}
+
+.coins-display {
+    font-size: 1.8rem;
+}
+
+.input-fields {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bet-amount-input, .guess-number-input {
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.bet-amount-input:focus, .guess-number-input:focus {
+    transform: scaleY(1.1);
+}
+
+.bet-amount-error, .guess-number-error {
+    color: red;
+}
+
+
+
+.play-btn {
+    cursor: pointer;
+    background-color: rgb(12, 192, 223);
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    max-width: 100px;
 }

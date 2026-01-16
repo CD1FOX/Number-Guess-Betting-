@@ -7,7 +7,7 @@ export class BettingSystem{
         if (Amount <= 0) {
             return "Cannot bet less than 0"
         } else if (Amount > this.gameStateSystem.coins){
-            return "Cannot bet greater than coins"
+            return "Cannot bet greater than your coins"
         }
 
         this.gameStateSystem.betAmount = Amount
