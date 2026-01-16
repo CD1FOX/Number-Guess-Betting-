@@ -1,9 +1,14 @@
 import { GameStateSystem } from "./Systems/game_state_system.js";
+import { BettingSystem } from "./Systems/betting_system.js";
+import { RandomizerSystem } from "./Systems/randomizer_system.js";
+import { EvaluationSystem } from "./Systems/evaluation_system.js";
+import { FeedbackMessagingSystem } from "./Systems/feedback_messaging_system.js";
+import { UISystem } from "./Systems/ui_system.js";
 
-const coinsDisplay = document.querySelector(".coins-display")
-const betAmountInput = document.querySelector(".bet-amount-input")
-const numberGuessInput = document.querySelector(".guess-number-input")
-const playButton = document.querySelector(".play-btn")
-const randomNumberResultDisplay = document.querySelector(".random-number-result")
-const coinsResultDisplay = document.querySelector(".coins-result")
 
+const gameStateSystem = new GameStateSystem()
+const bettingSystem = new BettingSystem(gameStateSystem)
+const randomizerSystem = new RandomizerSystem(gameStateSystem)
+const evaluationSystem = new EvaluationSystem(gameStateSystem)
+const feedbackMessagingSystem = new FeedbackMessagingSystem()
+const uiSystem = new UISystem(gameStateSystem, bettingSystem, randomizerSystem, evaluationSystem, feedbackMessagingSystem)

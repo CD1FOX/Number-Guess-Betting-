@@ -1,16 +1,8 @@
 export class GameStateSystem{
     constructor(){
         this.coins = 100
-        this.currentBet = null
+        this.betAmount = null
         this.numberGuess = null
+        this.randomNumber = null
     }
-
-    setBetAmount(coinAmount) {
-        this.currentBet = coinAmount
-    }
-
-    setNumberGuess(numberGuess) {
-        this.numberGuess = numberGuess
-    }
-
 }
