@@ -63,7 +63,11 @@ h1, .coins-display {
     color: red;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
 
+}
 
 .play-btn {
     cursor: pointer;
@@ -71,5 +75,13 @@ h1, .coins-display {
     border: none;
     border-radius: 15px;
     padding: 12px;
-    max-width: 100px;
+    min-width: 120px;
+    margin-bottom: 20px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
 }
