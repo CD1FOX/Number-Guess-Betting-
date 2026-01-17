@@ -18,6 +18,7 @@ export function UISystem(gameStateSystem, bettingSystem, randomizerSystem, evalu
 
         if (betAmountMessage){
             feedbackMessagingSystem.showMessage(betAmountError, betAmountMessage)
+            return
         } else {
             feedbackMessagingSystem.showMessage(betAmountError, "")
         }
@@ -26,6 +27,7 @@ export function UISystem(gameStateSystem, bettingSystem, randomizerSystem, evalu
 
         if (numberGuessMessage) {
             feedbackMessagingSystem.showMessage(numberGuessError, numberGuessMessage)
+            return
         } else {
             feedbackMessagingSystem.showMessage(numberGuessError, "")
         }
